@@ -1,0 +1,10 @@
+﻿
+- name: TimZone Setup
+  hosts: all
+  tasks:
+    - name: Setting Up Time Zone
+      win_xtimezone:
+        TimeZone:Central European Summer Time
+        IsSingleInstance:yes
+
+
