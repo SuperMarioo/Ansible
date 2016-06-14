@@ -1,5 +1,5 @@
 ﻿- name : Jazda
-  hosts: windows
+  hosts: all
   tasks:
   - name: Unpack my file
     win_dsc5:
