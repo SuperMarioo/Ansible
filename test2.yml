@@ -1,0 +1,9 @@
+﻿- name : Jazda
+  hosts: windows
+  tasks:
+  - name: Unpack my file
+    win_dsc5:
+      resource_name="archive"
+      ensure="Present"
+      path="C:\Temp\zipfile.zip"
+      destination="C:\Temp\Temp2"
