@@ -7,3 +7,13 @@
       ensure="Present"
       path="C:\Temp\zipfile.zip"
       destination="C:\Temp\Temp2"
+
+
+- name : Create FIle
+  hosts: all
+  tasks:
+  - name: Unpack my file
+    win_file:
+      path="c:\testAnsible"
+      state = "directory"
+        
