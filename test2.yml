@@ -14,6 +14,6 @@
   tasks:
   - name: Unpack my file
     win_file:
-      path="c:\testAnsible"
-      state = "directory"
+      path=c:\testAnsible
+      state=directory
         
