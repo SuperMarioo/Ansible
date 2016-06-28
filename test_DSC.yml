@@ -1,11 +1,21 @@
 ﻿
-- name: TimZone Setup
+- name: Change Computer Name
   hosts: all
   tasks:
-    - name: Join to domain
+    - name: Changing Computer name
       win_xcomputer:
         name: AnsibleIIS3
         AutoConfigureLcm: True
         AutoInstallModule: True
+
+- name: Change Computer Name
+  hosts: all
+  tasks:
+    - name: Changing Computer name
+      win_xcomputer:
+        name: AnsibleIIS3
+        AutoConfigureLcm: True
+        AutoInstallModule: True
+
 
 
