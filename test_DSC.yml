@@ -4,6 +4,7 @@
   tasks:
     - name: Join to domain
       win_xcomputer:
+        name: AnsibleIIS3
         AutoConfigureLcm: True
         AutoInstallModule: True
 
